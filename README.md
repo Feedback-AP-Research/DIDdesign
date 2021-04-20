@@ -137,7 +137,6 @@ attributes using functions from `ggplot2`.
 plot(check_panel)
 ```
 
-<img src="man/figures/README-panel_check_plot-1.png" width="100%" style="display: block; margin: auto;" />
 
   - Data used to generate the above plot are available via
     
@@ -245,7 +244,6 @@ require(patchwork)
   ggplot2::labs(title = "Pre- and Post-Treatment"))
 ```
 
-<img src="man/figures/README-panel_fit_plot-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## The Basic DID Design with Repeated Cross-sectional Data
 
@@ -294,7 +292,6 @@ summary(check_rcs)
 plot(check_rcs)
 ```
 
-<img src="man/figures/README-rcs_check_plot-1.png" width="100%" style="display: block; margin: auto;" />
 
 ### Step 2: Estimate causal effects
 
@@ -340,7 +337,6 @@ paglayan2019 <- paglayan2019 %>%
          log_salary      = log(teacher_salary + 1))
 ```
 
-<img src="man/figures/README-sa_plot-1.png" width="85%" />
 
 As we can see in the above plot, states receive the treatment at
 different years ranging from 1965 at earliest to 1987 at latest (and
@@ -388,7 +384,6 @@ By default, it plots the treatment variation plot on the right.
 plot(check_sa)
 ```
 
-<img src="man/figures/README-sa_check_plot-1.png" width="100%" style="display: block; margin: auto;" />
 
 ### Step 2: Estimate staggered-adoption average treatment effect
 
@@ -430,4 +425,3 @@ sa_plot +
   ggplot2::geom_vline(xintercept = 0, color = 'red', linetype = 'dotted')
 ```
 
-<img src="man/figures/README-sa_fit_plot-1.png" width="90%" style="display: block; margin: auto;" />
